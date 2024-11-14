@@ -1,0 +1,31 @@
+{
+  "name": "comp-se-200-assignment",
+  "version": "1.0.0",
+  "description": "Part 2 of the assignment on the Software testing (COMP.SE.200) course at Tampere University.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaticSulc/tuni-comp-se-200.git"
+  },
+  "author": "Elias Penkkimäki, Matic Šulc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaticSulc/tuni-comp-se-200/issues"
+  },
+  "homepage": "https://github.com/MaticSulc/tuni-comp-se-200#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@babel/preset-env": "^7.18.10"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  }
+}
