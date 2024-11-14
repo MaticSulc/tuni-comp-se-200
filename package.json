@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,12 @@
     "@babel/preset-env": "^7.18.10"
   },
   "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/src/.internal/"
+    ],
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
