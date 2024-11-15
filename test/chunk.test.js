@@ -42,9 +42,10 @@ test("handles negative chunk sizes gracefully", () => {
   expect(result).toEqual([]);
 });
 
+// Should treat size as 2
 test("splits array with floating-point chunk size", () => {
   const array = ["a", "b", "c", "d", "e"];
-  const result = chunk(array, 2.5); // Should treat size as 2
+  const result = chunk(array, 2.5); 
   expect(result).toEqual([["a", "b"], ["c", "d"], ["e"]]);
 });
 

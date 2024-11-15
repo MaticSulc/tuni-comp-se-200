@@ -1,9 +1,10 @@
 import { expect, test } from "@jest/globals";
 import filter from "../src/filter";
 
+// Filter even numbersS
 test("filters array based on a simple predicate", () => {
   const array = [1, 2, 3, 4];
-  const predicate = (value) => value % 2 === 0; // Filter even numbers
+  const predicate = (value) => value % 2 === 0; 
   const result = filter(array, predicate);
   expect(result).toEqual([2, 4]);
 });
@@ -38,9 +39,10 @@ test("handles an empty array gracefully", () => {
   expect(result).toEqual([]);
 });
 
+// Filter elements at even indexes
 test("filters with index as part of the predicate logic", () => {
   const array = [10, 20, 30, 40];
-  const predicate = (value, index) => index % 2 === 0; // Filter elements at even indexes
+  const predicate = (value, index) => index % 2 === 0; 
   const result = filter(array, predicate);
   expect(result).toEqual([10, 30]);
 });
